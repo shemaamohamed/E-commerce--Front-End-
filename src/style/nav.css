@@ -1,0 +1,49 @@
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand-text {
+  font-size: 1.75rem;  
+  font-weight: bold;   
+  color: #000;         
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  margin-right: -5px;
+
+}
+
+
+
+.cart-badge {
+  display: inline-flex;
+  align-items: center;
+}
+
+.cart-badge .badge {
+  margin-left: 5px;
+}
+.nav-content{
+  display: flex;
+  width: 100%;
+
+
+}
+.nav-content a{
+  color: #000;
+  position: relative;
+}
+.nav-content a:after{
+  content: '';
+  position: absolute;
+  width: 0;
+  left: 0; 
+  height: 3px;
+  color: black;
+  background-color: black;
+  bottom: 0px;
+  transition: width 0.3s ease;
+}
+.nav-content a:hover::after{
+  width: 100%;
+  transition:width ease-in-out 0.1s;
+}
